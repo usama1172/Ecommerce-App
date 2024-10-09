@@ -8,7 +8,7 @@ const { products } = useContext(ShopContext)
 const [latestProduct, setLatestProduct] = useState([]);
 useEffect(()=>{
     setLatestProduct(products.slice(0,10));
-},[])
+},[products])
 return (
     <div className='my-10'>
         <div className='text-3xl text-center py-8'>
